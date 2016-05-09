@@ -51,9 +51,13 @@ WCSessionDelegate
     [self.allReceiveObjects addObject:hischool];
     [self.countLabel setText:[NSString stringWithFormat:@"count:%i",self.allReceiveObjects.count]];
     [self.tableView setNumberOfRows:self.allReceiveObjects.count withRowType:@"HSCell"];
+    __weak typeof(self) weakSelf = self;
     for (NSInteger i=0; i<self.allReceiveObjects.count; i++) {
-        HiSchoolCell *cell = [self.tableView rowControllerAtIndex:i];
-        [cell setCellContent:hischool];
+        HiSchool *theHiSchool = self.allReceiveObjects[i];
+        [self animateWithDuration:0.8f animations:^{
+            HiSchoolCell *cell = [weakSelf.tableView rowControllerAtIndex:i];
+            [cell setCellContent:theHiSchool];
+        }];
     }
 }
 - (void)didDeactivate {

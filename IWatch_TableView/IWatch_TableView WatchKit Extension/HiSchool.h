@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-
+static NSString *const kWCAvarat = @"avatar";
+static NSString *const kWCName = @"name";
+static NSString *const kWCContent = @"content";
 @interface HiSchool : NSObject
 /** avatar */
 @property (nonatomic, strong) NSData *avatarData;
