@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label width="1" alignment="left" text="count:0" textAlignment="center" id="3yw-Ae-Izm"/>
+                        <table alignment="left" id="6Dk-WO-nYW">
+                            <items>
+                                <tableRow identifier="HSCell" id="IcJ-O9-Fkw" customClass="HiSchoolCell">
+                                    <group key="rootItem" width="1" alignment="left" id="PNJ-XA-YQd">
+                                        <items>
+                                            <imageView width="0.25" height="1" alignment="left" image="braceletLiked" id="MLY-rC-rag"/>
+                                            <group width="0.75" alignment="left" layout="vertical" id="oAy-yh-Sl3">
+                                                <items>
+                                                    <label width="1" height="0.5" alignment="left" text="Label" id="pVd-mw-bUZ">
+                                                        <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                                    </label>
+                                                    <label width="1" height="0.5" alignment="left" text="Label" id="wWQ-KE-KaI">
+                                                        <fontDescription key="font" type="system" pointSize="10"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="avatarImage" destination="MLY-rC-rag" id="48C-Mb-hX4"/>
+                                        <outlet property="contentLabel" destination="wWQ-KE-KaI" id="pm9-By-8ls"/>
+                                        <outlet property="nikeNameLabel" destination="pVd-mw-bUZ" id="fQs-Jy-XHh"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="countLabel" destination="3yw-Ae-Izm" id="N9d-lS-5qU"/>
+                        <outlet property="tableView" destination="6Dk-WO-nYW" id="FBb-oF-9o3"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

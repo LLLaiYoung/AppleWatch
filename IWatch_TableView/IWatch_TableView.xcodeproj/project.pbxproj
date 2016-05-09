@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		874A1BF61CE0B19400A033D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 874A1BF51CE0B19400A033D1 /* main.m */; };
+		874A1BF91CE0B19400A033D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 874A1BF81CE0B19400A033D1 /* AppDelegate.m */; };
+		874A1BFC1CE0B19400A033D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 874A1BFB1CE0B19400A033D1 /* ViewController.m */; };
+		874A1BFF1CE0B19400A033D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874A1BFD1CE0B19400A033D1 /* Main.storyboard */; };
+		874A1C011CE0B19400A033D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874A1C001CE0B19400A033D1 /* Assets.xcassets */; };
+		874A1C041CE0B19400A033D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874A1C021CE0B19400A033D1 /* LaunchScreen.storyboard */; };
+		874A1C091CE0B19400A033D1 /* IWatch_TableView WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 874A1C081CE0B19400A033D1 /* IWatch_TableView WatchKit App.app */; };
+		874A1C0F1CE0B19400A033D1 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874A1C0D1CE0B19400A033D1 /* Interface.storyboard */; };
+		874A1C111CE0B19400A033D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874A1C101CE0B19400A033D1 /* Assets.xcassets */; };
+		874A1C181CE0B19400A033D1 /* IWatch_TableView WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 874A1C171CE0B19400A033D1 /* IWatch_TableView WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		874A1C201CE0B19400A033D1 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 874A1C1F1CE0B19400A033D1 /* InterfaceController.m */; };
+		874A1C231CE0B19400A033D1 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 874A1C221CE0B19400A033D1 /* ExtensionDelegate.m */; };
+		874A1C261CE0B19400A033D1 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 874A1C251CE0B19400A033D1 /* NotificationController.m */; };
+		874A1C281CE0B19400A033D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874A1C271CE0B19400A033D1 /* Assets.xcassets */; };
+		874A1C391CE0BB7700A033D1 /* HiSchoolCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 874A1C381CE0BB7700A033D1 /* HiSchoolCell.m */; };
+		874A1C3D1CE0BE0200A033D1 /* HiSchool.m in Sources */ = {isa = PBXBuildFile; fileRef = 874A1C3C1CE0BE0200A033D1 /* HiSchool.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		874A1C0A1CE0B19400A033D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 874A1BE91CE0B19400A033D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 874A1C071CE0B19400A033D1;
+			remoteInfo = "IWatch_TableView WatchKit App";
+		};
+		874A1C191CE0B19400A033D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 874A1BE91CE0B19400A033D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 874A1C161CE0B19400A033D1;
+			remoteInfo = "IWatch_TableView WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		874A1C2F1CE0B19500A033D1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				874A1C181CE0B19400A033D1 /* IWatch_TableView WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		874A1C331CE0B19500A033D1 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				874A1C091CE0B19400A033D1 /* IWatch_TableView WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		874A1BF11CE0B19400A033D1 /* IWatch_TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IWatch_TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		874A1BF51CE0B19400A033D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		874A1BF71CE0B19400A033D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		874A1BF81CE0B19400A033D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		874A1BFA1CE0B19400A033D1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		874A1BFB1CE0B19400A033D1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		874A1BFE1CE0B19400A033D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		874A1C001CE0B19400A033D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		874A1C031CE0B19400A033D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		874A1C051CE0B19400A033D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		874A1C081CE0B19400A033D1 /* IWatch_TableView WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IWatch_TableView WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		874A1C0E1CE0B19400A033D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		874A1C101CE0B19400A033D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		874A1C121CE0B19400A033D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		874A1C171CE0B19400A033D1 /* IWatch_TableView WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "IWatch_TableView WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		874A1C1D1CE0B19400A033D1 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		874A1C1E1CE0B19400A033D1 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		874A1C1F1CE0B19400A033D1 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		874A1C211CE0B19400A033D1 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		874A1C221CE0B19400A033D1 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		874A1C241CE0B19400A033D1 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		874A1C251CE0B19400A033D1 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		874A1C271CE0B19400A033D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		874A1C291CE0B19400A033D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		874A1C371CE0BB7700A033D1 /* HiSchoolCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiSchoolCell.h; sourceTree = "<group>"; };
+		874A1C381CE0BB7700A033D1 /* HiSchoolCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HiSchoolCell.m; sourceTree = "<group>"; };
+		874A1C3B1CE0BE0200A033D1 /* HiSchool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiSchool.h; sourceTree = "<group>"; };
+		874A1C3C1CE0BE0200A033D1 /* HiSchool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HiSchool.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		874A1BEE1CE0B19400A033D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		874A1C141CE0B19400A033D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		874A1BE81CE0B19400A033D1 = {
+			isa = PBXGroup;
+			children = (
+				874A1BF31CE0B19400A033D1 /* IWatch_TableView */,
+				874A1C0C1CE0B19400A033D1 /* IWatch_TableView WatchKit App */,
+				874A1C1B1CE0B19400A033D1 /* IWatch_TableView WatchKit Extension */,
+				874A1BF21CE0B19400A033D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		874A1BF21CE0B19400A033D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				874A1BF11CE0B19400A033D1 /* IWatch_TableView.app */,
+				874A1C081CE0B19400A033D1 /* IWatch_TableView WatchKit App.app */,
+				874A1C171CE0B19400A033D1 /* IWatch_TableView WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		874A1BF31CE0B19400A033D1 /* IWatch_TableView */ = {
+			isa = PBXGroup;
+			children = (
+				874A1BF71CE0B19400A033D1 /* AppDelegate.h */,
+				874A1BF81CE0B19400A033D1 /* AppDelegate.m */,
+				874A1BFA1CE0B19400A033D1 /* ViewController.h */,
+				874A1BFB1CE0B19400A033D1 /* ViewController.m */,
+				874A1BFD1CE0B19400A033D1 /* Main.storyboard */,
+				874A1C001CE0B19400A033D1 /* Assets.xcassets */,
+				874A1C021CE0B19400A033D1 /* LaunchScreen.storyboard */,
+				874A1C051CE0B19400A033D1 /* Info.plist */,
+				874A1BF41CE0B19400A033D1 /* Supporting Files */,
+			);
+			path = IWatch_TableView;
+			sourceTree = "<group>";
+		};
+		874A1BF41CE0B19400A033D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				874A1BF51CE0B19400A033D1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		874A1C0C1CE0B19400A033D1 /* IWatch_TableView WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				874A1C0D1CE0B19400A033D1 /* Interface.storyboard */,
+				874A1C101CE0B19400A033D1 /* Assets.xcassets */,
+				874A1C121CE0B19400A033D1 /* Info.plist */,
+			);
+			path = "IWatch_TableView WatchKit App";
+			sourceTree = "<group>";
+		};
+		874A1C1B1CE0B19400A033D1 /* IWatch_TableView WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				874A1C3E1CE0BE0800A033D1 /* Models */,
+				874A1C3A1CE0BDEB00A033D1 /* Views */,
+				874A1C1E1CE0B19400A033D1 /* InterfaceController.h */,
+				874A1C1F1CE0B19400A033D1 /* InterfaceController.m */,
+				874A1C211CE0B19400A033D1 /* ExtensionDelegate.h */,
+				874A1C221CE0B19400A033D1 /* ExtensionDelegate.m */,
+				874A1C241CE0B19400A033D1 /* NotificationController.h */,
+				874A1C251CE0B19400A033D1 /* NotificationController.m */,
+				874A1C271CE0B19400A033D1 /* Assets.xcassets */,
+				874A1C291CE0B19400A033D1 /* Info.plist */,
+				874A1C1C1CE0B19400A033D1 /* Supporting Files */,
+			);
+			path = "IWatch_TableView WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		874A1C1C1CE0B19400A033D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				874A1C1D1CE0B19400A033D1 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		874A1C3A1CE0BDEB00A033D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				874A1C371CE0BB7700A033D1 /* HiSchoolCell.h */,
+				874A1C381CE0BB7700A033D1 /* HiSchoolCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		874A1C3E1CE0BE0800A033D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				874A1C3B1CE0BE0200A033D1 /* HiSchool.h */,
+				874A1C3C1CE0BE0200A033D1 /* HiSchool.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		874A1BF01CE0B19400A033D1 /* IWatch_TableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 874A1C341CE0B19500A033D1 /* Build configuration list for PBXNativeTarget "IWatch_TableView" */;
+			buildPhases = (
+				874A1BED1CE0B19400A033D1 /* Sources */,
+				874A1BEE1CE0B19400A033D1 /* Frameworks */,
+				874A1BEF1CE0B19400A033D1 /* Resources */,
+				874A1C331CE0B19500A033D1 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				874A1C0B1CE0B19400A033D1 /* PBXTargetDependency */,
+			);
+			name = IWatch_TableView;
+			productName = IWatch_TableView;
+			productReference = 874A1BF11CE0B19400A033D1 /* IWatch_TableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		874A1C071CE0B19400A033D1 /* IWatch_TableView WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 874A1C301CE0B19500A033D1 /* Build configuration list for PBXNativeTarget "IWatch_TableView WatchKit App" */;
+			buildPhases = (
+				874A1C061CE0B19400A033D1 /* Resources */,
+				874A1C2F1CE0B19500A033D1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				874A1C1A1CE0B19400A033D1 /* PBXTargetDependency */,
+			);
+			name = "IWatch_TableView WatchKit App";
+			productName = "IWatch_TableView WatchKit App";
+			productReference = 874A1C081CE0B19400A033D1 /* IWatch_TableView WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		874A1C161CE0B19400A033D1 /* IWatch_TableView WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 874A1C2C1CE0B19500A033D1 /* Build configuration list for PBXNativeTarget "IWatch_TableView WatchKit Extension" */;
+			buildPhases = (
+				874A1C131CE0B19400A033D1 /* Sources */,
+				874A1C141CE0B19400A033D1 /* Frameworks */,
+				874A1C151CE0B19400A033D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IWatch_TableView WatchKit Extension";
+			productName = "IWatch_TableView WatchKit Extension";
+			productReference = 874A1C171CE0B19400A033D1 /* IWatch_TableView WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		874A1BE91CE0B19400A033D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = LaiYoung;
+				TargetAttributes = {
+					874A1BF01CE0B19400A033D1 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					874A1C071CE0B19400A033D1 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					874A1C161CE0B19400A033D1 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 874A1BEC1CE0B19400A033D1 /* Build configuration list for PBXProject "IWatch_TableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 874A1BE81CE0B19400A033D1;
+			productRefGroup = 874A1BF21CE0B19400A033D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				874A1BF01CE0B19400A033D1 /* IWatch_TableView */,
+				874A1C071CE0B19400A033D1 /* IWatch_TableView WatchKit App */,
+				874A1C161CE0B19400A033D1 /* IWatch_TableView WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		874A1BEF1CE0B19400A033D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				874A1C041CE0B19400A033D1 /* LaunchScreen.storyboard in Resources */,
+				874A1C011CE0B19400A033D1 /* Assets.xcassets in Resources */,
+				874A1BFF1CE0B19400A033D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		874A1C061CE0B19400A033D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				874A1C111CE0B19400A033D1 /* Assets.xcassets in Resources */,
+				874A1C0F1CE0B19400A033D1 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		874A1C151CE0B19400A033D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				874A1C281CE0B19400A033D1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		874A1BED1CE0B19400A033D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				874A1BFC1CE0B19400A033D1 /* ViewController.m in Sources */,
+				874A1BF91CE0B19400A033D1 /* AppDelegate.m in Sources */,
+				874A1BF61CE0B19400A033D1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		874A1C131CE0B19400A033D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				874A1C231CE0B19400A033D1 /* ExtensionDelegate.m in Sources */,
+				874A1C3D1CE0BE0200A033D1 /* HiSchool.m in Sources */,
+				874A1C201CE0B19400A033D1 /* InterfaceController.m in Sources */,
+				874A1C391CE0BB7700A033D1 /* HiSchoolCell.m in Sources */,
+				874A1C261CE0B19400A033D1 /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		874A1C0B1CE0B19400A033D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 874A1C071CE0B19400A033D1 /* IWatch_TableView WatchKit App */;
+			targetProxy = 874A1C0A1CE0B19400A033D1 /* PBXContainerItemProxy */;
+		};
+		874A1C1A1CE0B19400A033D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 874A1C161CE0B19400A033D1 /* IWatch_TableView WatchKit Extension */;
+			targetProxy = 874A1C191CE0B19400A033D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		874A1BFD1CE0B19400A033D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				874A1BFE1CE0B19400A033D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		874A1C021CE0B19400A033D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				874A1C031CE0B19400A033D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		874A1C0D1CE0B19400A033D1 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				874A1C0E1CE0B19400A033D1 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		874A1C2A1CE0B19400A033D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		874A1C2B1CE0B19400A033D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		874A1C2D1CE0B19500A033D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "IWatch_TableView WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LaiYoung.IWatch-TableView.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		874A1C2E1CE0B19500A033D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "IWatch_TableView WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LaiYoung.IWatch-TableView.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		874A1C311CE0B19500A033D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = IWatch_TableView_WatchKit_Extension;
+				INFOPLIST_FILE = "IWatch_TableView WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LaiYoung.IWatch-TableView.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		874A1C321CE0B19500A033D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = IWatch_TableView_WatchKit_Extension;
+				INFOPLIST_FILE = "IWatch_TableView WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LaiYoung.IWatch-TableView.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		874A1C351CE0B19500A033D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IWatch_TableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LaiYoung.IWatch-TableView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		874A1C361CE0B19500A033D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IWatch_TableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LaiYoung.IWatch-TableView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		874A1BEC1CE0B19400A033D1 /* Build configuration list for PBXProject "IWatch_TableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				874A1C2A1CE0B19400A033D1 /* Debug */,
+				874A1C2B1CE0B19400A033D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		874A1C2C1CE0B19500A033D1 /* Build configuration list for PBXNativeTarget "IWatch_TableView WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				874A1C2D1CE0B19500A033D1 /* Debug */,
+				874A1C2E1CE0B19500A033D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		874A1C301CE0B19500A033D1 /* Build configuration list for PBXNativeTarget "IWatch_TableView WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				874A1C311CE0B19500A033D1 /* Debug */,
+				874A1C321CE0B19500A033D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		874A1C341CE0B19500A033D1 /* Build configuration list for PBXNativeTarget "IWatch_TableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				874A1C351CE0B19500A033D1 /* Debug */,
+				874A1C361CE0B19500A033D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 874A1BE91CE0B19400A033D1 /* Project object */;
+}
