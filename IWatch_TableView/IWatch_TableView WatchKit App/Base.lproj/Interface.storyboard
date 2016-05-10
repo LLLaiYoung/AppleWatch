@@ -10,20 +10,26 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <label width="1" alignment="left" text="count:0" textAlignment="center" id="3yw-Ae-Izm"/>
+                        <button width="1" height="0.20000000000000001" alignment="left" title="点击此处可删除所有" id="fCY-Gz-Eus">
+                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <connections>
+                                <action selector="removeAllBtn" destination="AgC-eL-Hgc" id="rLK-Lk-dnS"/>
+                            </connections>
+                        </button>
                         <table alignment="left" id="6Dk-WO-nYW">
                             <items>
                                 <tableRow identifier="HSCell" id="IcJ-O9-Fkw" customClass="HiSchoolCell">
                                     <group key="rootItem" width="1" alignment="left" id="PNJ-XA-YQd">
                                         <items>
-                                            <imageView width="0.25" height="1" alignment="left" image="braceletLiked" id="MLY-rC-rag"/>
+                                            <imageView width="0.25" height="0.80000000000000004" alignment="left" verticalAlignment="center" image="braceletLiked" id="MLY-rC-rag"/>
                                             <group width="0.75" alignment="left" layout="vertical" id="oAy-yh-Sl3">
                                                 <items>
                                                     <label width="1" height="0.5" alignment="left" text="Label" id="pVd-mw-bUZ">
                                                         <fontDescription key="font" style="UICTFontTextStyleBody"/>
                                                     </label>
                                                     <label width="1" height="0.5" alignment="left" text="Label" id="wWQ-KE-KaI">
-                                                        <fontDescription key="font" type="system" pointSize="10"/>
+                                                        <fontDescription key="font" type="system" weight="light" pointSize="10"/>
                                                     </label>
                                                 </items>
                                             </group>
@@ -39,7 +45,7 @@
                         </table>
                     </items>
                     <connections>
-                        <outlet property="countLabel" destination="3yw-Ae-Izm" id="N9d-lS-5qU"/>
+                        <outlet property="headerBtn" destination="fCY-Gz-Eus" id="o5I-6s-htj"/>
                         <outlet property="tableView" destination="6Dk-WO-nYW" id="FBb-oF-9o3"/>
                     </connections>
                 </controller>
