@@ -18,6 +18,7 @@
 
 @implementation HiSchoolCell
 - (void)setCellContent:(HiSchool *)content {
+//    self.contentLabel sette
     [self.avatarImage setImageData:content.avatarData];
     [self.nikeNameLabel setText:content.name];
     [self.contentLabel setText:content.content];

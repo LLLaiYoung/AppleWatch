@@ -6,4 +6,4 @@
 - Touch the screen to send data to iWatch  
 - Please run on the iOS side, make sure the iphone app  
 
-![](iWatch_.gif)
+![](2016-05-12 22.27.44.gif)

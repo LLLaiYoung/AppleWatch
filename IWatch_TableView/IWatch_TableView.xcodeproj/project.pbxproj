@@ -281,9 +281,11 @@
 				TargetAttributes = {
 					874A1BF01CE0B19400A033D1 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = V643FA582P;
 					};
 					874A1C071CE0B19400A033D1 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = HG5R7SNQ72;
 					};
 					874A1C161CE0B19400A033D1 = {
 						CreatedOnToolsVersion = 7.2;
@@ -518,10 +520,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				IBSC_MODULE = IWatch_TableView_WatchKit_Extension;
 				INFOPLIST_FILE = "IWatch_TableView WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LaiYoung.IWatch-TableView.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -533,10 +538,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				IBSC_MODULE = IWatch_TableView_WatchKit_Extension;
 				INFOPLIST_FILE = "IWatch_TableView WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LaiYoung.IWatch-TableView.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -548,10 +556,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = IWatch_TableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LaiYoung.IWatch-TableView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -559,10 +570,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = IWatch_TableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LaiYoung.IWatch-TableView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -585,6 +599,7 @@
 				874A1C2E1CE0B19500A033D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		874A1C301CE0B19500A033D1 /* Build configuration list for PBXNativeTarget "IWatch_TableView WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -593,6 +608,7 @@
 				874A1C321CE0B19500A033D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		874A1C341CE0B19500A033D1 /* Build configuration list for PBXNativeTarget "IWatch_TableView" */ = {
 			isa = XCConfigurationList;
@@ -601,6 +617,7 @@
 				874A1C361CE0B19500A033D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -51,7 +51,7 @@ WCSessionDelegate
     //* 删除 */
     NSRange range = NSMakeRange(0, self.allReceiveObjects.count);
     [self.tableView removeRowsAtIndexes:[NSIndexSet indexSetWithIndexesInRange:range]];
-    [self.headerBtn setTitle:@"已删除全部"];
+    [self.headerBtn setTitle:@"已删除全部\n并发送消息到iOS"];
     [self.allReceiveObjects removeAllObjects];
     //* 发送数据到iOS */
     NSDictionary *infoDic = @{@"iWatch":@"iWatch已删除全部"};
