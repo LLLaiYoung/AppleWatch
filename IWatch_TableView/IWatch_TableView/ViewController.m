@@ -14,7 +14,9 @@
 
 #import "ViewController.h"
 #import <WatchConnectivity/WatchConnectivity.h>
+#import "HiSchool.h"
 #define SCREEN_SIZE [[UIScreen mainScreen] bounds].size
+#define WEAKSELF __weak typeof(self) weakSelf = self;
 @interface ViewController ()
 <
 WCSessionDelegate
@@ -71,7 +73,7 @@ WCSessionDelegate
     NSData *avatarData = UIImagePNGRepresentation([UIImage imageNamed:@"IMG_0852"]);
     
     NSString *contnet = [@"Hello," stringByAppendingString:[NSString stringWithFormat:@"--%@",[self dateStr]]];
-    NSDictionary *infoDic = @{@"avatar":avatarData,@"name":@"LaiYoung",@"content":contnet};
+    NSDictionary *infoDic = @{kWCAvarat:avatarData,kWCName:@"LaiYoung",kWCContent:contnet};
     //* 发送数据到iWatch端 */
     //* 方式1  */
     [self.session transferCurrentComplicationUserInfo:infoDic];
@@ -92,18 +94,24 @@ WCSessionDelegate
 }
 //* 接收数据方式1 配合 transferUserInfo */
 -(void)session:(WCSession *)session didReceiveUserInfo:(NSDictionary<NSString *,id> *)userInfo {
-    NSLog(@"userinfo = %@",userInfo);
-    self.label.text = [NSString stringWithFormat:@"iWatch:%@\n%@",userInfo[@"iWatch"],[self dateStr]];
-    //* 暂停定时器 */
-    NSDate *date = [NSDate distantFuture];
-    [self.timer setFireDate:date];
+    NSLog(@"currentThread---1 = %@",[NSThread currentThread]);
+    //currentThread---1 = <NSThread: 0x7fc299db1f30>{number = 2, name = (null)}
+    WEAKSELF
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"currentThread---2 = %@",[NSThread currentThread]);
+        //currentThread---2 = <NSThread: 0x7f8092607e40>{number = 1, name = main}
+        weakSelf.label.text = [NSString stringWithFormat:@"iWatch:%@\n%@",userInfo[@"iWatch"],[weakSelf dateStr]];
+        //* 暂停定时器 */
+        NSDate *date = [NSDate distantFuture];
+        [weakSelf.timer setFireDate:date];
+    });
 
 }
 //* 接收数据方式2 配合 sendMessage: replyHandler: errorHandler: */
 - (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message {
     NSLog(@"currentThread---1 = %@",[NSThread currentThread]);
     // currentThread---1 = <NSThread: 0x7fc4d9f08530>{number = 2, name = (null)}
-    __weak typeof(self) weakSelf = self;
+    WEAKSELF
     //* 在主线程更新UI (不然会有延迟,应该是默认在子线程执行)*/
     dispatch_async(dispatch_get_main_queue(), ^{
         NSLog(@"currentThread---2 = %@",[NSThread currentThread]);

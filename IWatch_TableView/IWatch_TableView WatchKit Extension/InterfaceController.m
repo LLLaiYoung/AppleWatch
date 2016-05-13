@@ -12,6 +12,7 @@
 #import <WatchConnectivity/WatchConnectivity.h>
 #import "HiSchool.h"
 #import "HiSchoolCell.h"
+#define WEAKSELF __weak typeof(self) weakSelf = self;
 @interface InterfaceController()
 <
 WCSessionDelegate
@@ -56,40 +57,36 @@ WCSessionDelegate
     //* 发送数据到iOS */
     NSDictionary *infoDic = @{@"iWatch":@"iWatch已删除全部"};
     //* 方式1 */
-    [self.session sendMessage:infoDic replyHandler:nil errorHandler:nil];
+//    [self.session sendMessage:infoDic replyHandler:nil errorHandler:nil];
     //* 方式2 */
-//    [self.session transferUserInfo:infoDic];
+    [self.session transferUserInfo:infoDic];
 }
 #pragma mark - WCSessionDelegate
 //* 接收数据方式1 配合 transferCurrentComplicationUserInfo */
 - (void)session:(WCSession *)session didReceiveUserInfo:(NSDictionary<NSString *,id> *)userInfo {
-    HiSchool *hischool = [HiSchool new];
-    hischool.avatarData = userInfo[@"avatar"];
-    hischool.name = userInfo[@"name"];
-    hischool.content = userInfo[@"content"];
-    [self.allReceiveObjects addObject:hischool];
-    [self.headerBtn setTitle:[NSString stringWithFormat:@"count:%i\n点击此处删除全部",self.allReceiveObjects.count]];
-
-    //* 新增数据 */
-    [self.tableView insertRowsAtIndexes:[NSIndexSet indexSetWithIndex:0]  withRowType:@"HSCell"];
-    HiSchoolCell *cell = [self.tableView rowControllerAtIndex:0];
-    [cell setCellContent:hischool];
+    [self setTableCell:userInfo];
 }
-
 //* 接收数据方式2 配合 sendMessage: replyHandler: errorHandler: */
-//- (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message {
-//    HiSchool *hischool = [HiSchool new];
-//    hischool.avatarData = message[@"avatar"];
-//    hischool.name = message[@"name"];
-//    hischool.content = message[@"content"];
-//    [self.allReceiveObjects addObject:hischool];
-//    [self.headerBtn setTitle:[NSString stringWithFormat:@"count:%i\n点击此处删除全部",self.allReceiveObjects.count]];
-//    
-//    //* 新增数据 */
-//    [self.tableView insertRowsAtIndexes:[NSIndexSet indexSetWithIndex:0]  withRowType:@"HSCell"];
-//    HiSchoolCell *cell = [self.tableView rowControllerAtIndex:0];
-//    [cell setCellContent:hischool];
-//}
+- (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message {
+    [self setTableCell:message];
+  }
+- (void)setTableCell:(NSDictionary *)dic {
+    WEAKSELF
+    dispatch_async(dispatch_get_main_queue(), ^{
+        HiSchool *hischool = [HiSchool new];
+        hischool.avatarData = dic[kWCAvarat];
+        hischool.name = dic[kWCName];
+        hischool.content = dic[kWCContent];
+        [weakSelf.allReceiveObjects addObject:hischool];
+        [weakSelf.headerBtn setTitle:[NSString stringWithFormat:@"count:%i\n点击此处删除全部",weakSelf.allReceiveObjects.count]];
+        
+        //* 新增数据 */
+        [weakSelf.tableView insertRowsAtIndexes:[NSIndexSet indexSetWithIndex:0]  withRowType:@"HSCell"];
+        HiSchoolCell *cell = [weakSelf.tableView rowControllerAtIndex:0];
+        [cell setCellContent:hischool];
+    });
+
+}
 - (void)didDeactivate {
     // This method is called when watch view controller is no longer visible
     [super didDeactivate];
